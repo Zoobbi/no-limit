@@ -1,0 +1,199 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+[class*="col-"] {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@for $i from 1 through 32 {
+  .margin#{4*$i} {
+    margin: #{4*$i}px;
+  }
+}
+
+@for $i from 1 through 32 {
+  .mt#{4*$i} {
+    margin-top: #{4*$i}px;
+  }
+}
+
+@for $i from 1 through 32 {
+  .mb#{4*$i} {
+    margin-bottom: #{4*$i}px;
+  }
+}
+
+@for $i from 1 through 32 {
+  .padding#{4*$i} {
+    padding: #{4*$i}px;
+  }
+}
+
+@for $i from 1 through 32 {
+  .pt#{4*$i} {
+    padding-top: #{4*$i}px;
+  }
+}
+
+@for $i from 1 through 32 {
+  .pb#{4*$i} {
+    padding-bottom: #{4*$i}px;
+  }
+}
+
+/* Дектопы (lg) */
+@media (min-width: 992px) {
+  @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      flex: 0 0 (100% / 12 * $i);
+      max-width: (100% / 12 * $i);
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .marginLg#{4*$i} {
+      margin: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .mtLg#{4*$i} {
+      margin-top: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .mbLg#{4*$i} {
+      margin-bottom: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .paddingLg#{4*$i} {
+      padding: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .ptLg#{4*$i} {
+      padding-top: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .pbLg#{4*$i} {
+      padding-bottom: #{4*$i}px;
+    }
+  }
+}
+
+/* Планшеты (md) */
+@media (max-width: 991px) {
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      flex: 0 0 (100% / 12 * $i);
+      max-width: (100% / 12 * $i);
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .marginMd#{4*$i} {
+      margin: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .mtMd#{4*$i} {
+      margin-top: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .mbMd#{4*$i} {
+      margin-bottom: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .paddingMd#{4*$i} {
+      padding: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .ptMd#{4*$i} {
+      padding-top: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .pbMd#{4*$i} {
+      padding-bottom: #{4*$i}px;
+    }
+  }
+}
+
+/* Мобильные (sm) */
+@media (max-width: 576px) {
+  @for $i from 1 through 12 {
+    .col-sm-#{$i} {
+      flex: 0 0 (100% / 12 * $i);
+      max-width: (100% / 12 * $i);
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .marginSm#{4*$i} {
+      margin-top: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .mtSm#{4*$i} {
+      margin-top: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .mbSm#{4*$i} {
+      margin-top: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .paddingSm#{4*$i} {
+      padding: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .ptSm#{4*$i} {
+      padding-top: #{4*$i}px;
+    }
+  }
+
+  @for $i from 1 through 32 {
+    .pbSm#{4*$i} {
+      padding-bottom: #{4*$i}px;
+    }
+  }
+}
+
+.pbLg48 {
+  padding-bottom: 48px;
+}
