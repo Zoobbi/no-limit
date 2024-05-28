@@ -1,0 +1,21 @@
+$breakpoint-sm: 576px;
+$breakpoint-md: 991px;
+$breakpoint-lg: 992px;
+
+@mixin respond-to($media) {
+  @if $media == sm {
+    @media (max-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == md {
+    @media (max-width: $breakpoint-md) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  }
+}
+
+.element {
+  @include respond-to(lg) {
+    // ваш код
+  }
+}
