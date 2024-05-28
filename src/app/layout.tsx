@@ -2,8 +2,15 @@ import type { Metadata } from "next";
 // eslint-disable-next-line import/order
 import { Inter } from "next/font/google";
 
-import "./globals.css";
 import { ReactNode } from "react";
+
+import "./globals.css";
+import "../styles/grid.scss";
+import "../styles/flex.scss";
+import "../styles/fonts.scss";
+import "../styles/common.scss";
+import { Header } from "@Basket/components/organisms/header";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
+        <Header />
         {children}
       </body>
     </html>

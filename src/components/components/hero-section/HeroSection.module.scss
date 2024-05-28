@@ -1,0 +1,32 @@
+@import "src/styles/media.scss";
+
+.heroSection {
+  position: relative;
+  width: 100%;
+  max-width: var(--max-site-width);
+  height: calc(100vh - var(--header-height));
+  background: url("/corte.webp") no-repeat center center;
+  background-size: cover;
+  margin: 0 auto;
+
+  @include respond-to(lg) {
+    color: green;
+    max-height: 1200px;
+  }
+  @include respond-to(md) {
+    color: #33a8ff;
+    max-height: 800px;
+  }
+  @include respond-to(sm) {
+    color: #33a8ff;
+    max-height: 550px;
+  }
+}
+
+.contentWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+  color: var(--white-color);
+}

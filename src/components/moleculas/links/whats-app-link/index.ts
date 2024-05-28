@@ -1,0 +1,1 @@
+export { WhatsAppLink } from "./WhatsAppLink";

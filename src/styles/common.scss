@@ -1,0 +1,14 @@
+:root {
+  // borderRadius
+  --border-radius-12: 12px;
+  --border-radius-30: 30px;
+  --border-radius-34: 34px;
+  --border-radius-round: 50%;
+}
+
+.fullHeight {
+  height: 100%;
+}
+.shadowText {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
