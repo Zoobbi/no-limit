@@ -7,6 +7,7 @@ interface GridWrapperProps {
   children: ReactNode;
   isZeroColPadding?: boolean;
   id?: string;
+  // eslint-disable-next-line no-undef
   as?: keyof JSX.IntrinsicElements;
   gridValues?: {
     lg: number;

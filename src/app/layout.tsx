@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 // eslint-disable-next-line import/order
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 
 import { ReactNode } from "react";
 
@@ -10,9 +10,10 @@ import "../styles/flex.scss";
 import "../styles/fonts.scss";
 import "../styles/common.scss";
 import { Header } from "@Basket/components/organisms/header";
+import { Footer } from "@Basket/components/organisms/footer";
 
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["cyrillic"], weight: ["400", "500", "700"],  display: "swap" });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,9 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,0 +1,35 @@
+.accordion {
+  width: 100%;
+  border: 1px solid var(--contrast-color);
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.accordionTitle {
+  padding: 16px;
+  cursor: pointer;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordionContent {
+  padding: 16px;
+}
+
+.accordionWrapper {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.accordionArrow {
+  min-width: 32px;
+  transform: rotate(90deg);
+}
+
+.accordionArrowActive {
+  min-width: 32px;
+  transform: rotate(270deg);
+}

@@ -1,0 +1,30 @@
+@import "src/styles/media.scss";
+
+.headerLevel3 {
+  text-shadow: var(--text-shadow);
+
+  @include respond-to(lg) {
+    font-size: var(--font-24);
+    font-weight: 700;
+    line-height: var(--line-height-28);
+  }
+  @include respond-to(sm) {
+    font-size: var(--font-18);
+    font-weight: 700;
+    line-height: var(--line-height-24);
+  }
+}
+.headerLevel4 {
+  text-shadow: var(--text-shadow);
+
+  @include respond-to(lg) {
+    font-size: var(--font-18);
+    font-weight: 700;
+    line-height: var(--line-height-24);
+  }
+  @include respond-to(sm) {
+    font-size: var(--font-14);
+    font-weight: 700;
+    line-height: var(--line-height-16);
+  }
+}

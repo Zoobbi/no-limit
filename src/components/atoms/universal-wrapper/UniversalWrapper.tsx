@@ -4,6 +4,7 @@ import { UniversalWrapperProps } from "./types";
 export const UniversalWrapper = (props: UniversalWrapperProps) => {
   const {
     additionalStyles,
+    id,
     as: Component = "div",
     children,
   } = props;
@@ -11,5 +12,9 @@ export const UniversalWrapper = (props: UniversalWrapperProps) => {
   const commonStyles = getStylesForUniversalWrapper(props);
   const moreStyles = additionalStyles || "";
 
-  return <Component className={`${commonStyles} ${moreStyles}`}>{children}</Component>;
+  return (
+    <Component id={id} className={`${commonStyles} ${moreStyles}`}>
+      {children}
+    </Component>
+  );
 };

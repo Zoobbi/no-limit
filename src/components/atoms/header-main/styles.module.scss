@@ -1,8 +1,18 @@
+@import "src/styles/media.scss";
+
 .headerMain {
-  font-weight: 700;
-  font-size: var(--font-28);
-  line-height:  var(--line-height-28);
   letter-spacing: var(--letter-spacing-2em);
   color: var(--main-color);
   text-align: center;
+
+  @include respond-to(lg) {
+    font-size: var(--font-48);
+    font-weight: 700;
+    line-height: var(--line-height-56);
+  }
+  @include respond-to(sm) {
+    font-weight: 700;
+    font-size: var(--font-28);
+    line-height:  var(--line-height-32);
+  }
 }

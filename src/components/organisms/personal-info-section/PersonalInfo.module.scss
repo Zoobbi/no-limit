@@ -1,0 +1,16 @@
+@import "src/styles/media.scss";
+
+.colStyles {
+  @include respond-to(md) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @include respond-to(sm) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+

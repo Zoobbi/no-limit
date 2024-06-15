@@ -1,0 +1,1 @@
+export { PicturesWithText } from "./PicturesWithText";

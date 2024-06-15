@@ -15,8 +15,10 @@
   --additional-color: #FCFF32;
   --alternative-color: #FEFFB0;
   --contrast-color: #f15d22;
+  --bg-color: #fff8e84f;
+  --tc-official-color: #229ED9;
+  --whatsapp-official-color: #25D366;
 }
-
 
 * {
   box-sizing: border-box;
@@ -35,7 +37,7 @@ body {
 }
 
 body {
-
+  background-color: var(--bg-color);
 }
 
 a {

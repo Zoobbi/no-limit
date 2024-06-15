@@ -1,5 +1,11 @@
 import { FC, ReactNode } from "react";
 
-export const Container: FC<{children: ReactNode}> = ({ children }) => {
-  return <div className="container">{children}</div>;
+// eslint-disable-next-line no-undef
+export const Container: FC<{children: ReactNode, as?: keyof JSX.IntrinsicElements}> = (
+  {
+    children,
+    as: Component = "div",
+  },
+) => {
+  return <Component className="container">{children}</Component>;
 };
