@@ -1,0 +1,1 @@
+export { VertImageWithText } from "./VertImageWithText";

@@ -1,0 +1,15 @@
+@import "src/styles/media.scss";
+
+.footer {
+  background-color: var(--contrast-color);
+  color: var(--white-color);
+}
+
+.contacts {
+  gap: 24px;
+
+    @include respond-to(sm) {
+      justify-content: flex-start;
+      margin-top: 24px;
+    }
+}

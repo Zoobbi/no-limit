@@ -1,0 +1,19 @@
+.headerWrapper {
+  width: 100%;
+  max-width: var(--max-site-width);
+  height: var(--header-height);
+  min-height: var(--header-height);
+  background-color: var(--contrast-color);
+  margin: 0 auto;
+  color: var(--white-color);
+}
+
+.contacts {
+  gap: 24px;
+}
+
+.navigationWrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}

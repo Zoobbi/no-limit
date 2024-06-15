@@ -1,3 +1,48 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["@typescript-eslint", "react", "import"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "object-curly-spacing": ["error", "always"],
+    "camelcase": "error",
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "no-unused-vars": "warn",
+    "eqeqeq": "error",
+    "indent": ["error", 2],
+    "array-callback-return": "error",
+    "no-multiple-empty-lines": "error",
+    "no-var": "error",
+    "prefer-const": "error",
+    "max-len": ["error", { "code": 120 }],
+    "comma-dangle": ["error", "always-multiline"],
+    "no-console": "warn",
+    "no-debugger": "warn",
+    "no-alert": "warn",
+    "no-await-in-loop": "warn",
+    "no-undef": "error",
+    "no-redeclare": "error",
+    "prefer-template": "error",
+    "no-dupe-keys": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/order": ["error", {
+      "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+      "newlines-between": "always"
+    }]
+  }
 }

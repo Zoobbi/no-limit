@@ -1,0 +1,72 @@
+@import "src/styles/media.scss";
+
+:root {
+  // borderRadius
+  --border-radius-12: 12px;
+  --border-radius-30: 30px;
+  --border-radius-34: 34px;
+  --border-radius-round: 50%;
+}
+
+.fullHeight {
+  height: 100%;
+}
+.shadowText {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.whiteBg {
+  background-color: var(--white-color);
+}
+
+.blackIcon {
+  g {
+    fill: var(--text-color);
+  }
+ path {
+   fill: var(--text-color);
+ }
+}
+
+.tgOffIconColor {
+  g {
+    fill: var(--tc-official-color);
+  }
+  path {
+    fill: var(--tc-official-color);
+  }
+}
+
+.whatsappOffIconColor {
+  g {
+    fill: var(--whatsapp-official-color);
+  }
+  path {
+    fill: var(--whatsapp-official-color);
+  }
+}
+
+.displayView {
+  @include respond-to(md) {
+    display: none;
+  }
+
+  @include respond-to(sm) {
+    display: none;
+  }
+}
+
+.mobileView {
+  @include respond-to(ld) {
+    display: none;
+  }
+}
+
+.disableScroll {
+  overflow: hidden;
+  height: 100vh;
+}
