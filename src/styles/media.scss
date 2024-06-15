@@ -1,13 +1,14 @@
 $breakpoint-sm: 576px;
-$breakpoint-md: 991px;
+$breakpoint-md: 768px;
+$breakpoint-md-max: 991px;
 $breakpoint-lg: 992px;
 
 @mixin respond-to($media) {
   @if $media == sm {
-    @media (max-width: $breakpoint-sm) { @content; }
+    @media (max-width: $breakpoint-md - 1) { @content; }
   }
   @else if $media == md {
-    @media (max-width: $breakpoint-md) { @content; }
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-md-max) { @content; }
   }
   @else if $media == lg {
     @media (min-width: $breakpoint-lg) { @content; }
@@ -19,3 +20,4 @@ $breakpoint-lg: 992px;
     // ваш код
   }
 }
+// @import "src/styles/media.scss";

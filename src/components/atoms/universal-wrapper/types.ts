@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-type Steps = 0 | 4 | 8 | 12 | 16 | 20 | 24 | 28 | 32 | 48;
+type Steps = 0 | 4 | 8 | 12 | 16 | 20 | 24 | 28 | 32 | 48 | 96;
 
 interface LayoutData {
   margin?: Steps,
@@ -41,5 +41,7 @@ export type GetUniversalWrapperProps = FlexGrid & LayoutData;
 export interface UniversalWrapperProps extends LayoutData, FlexGrid{
   children: ReactNode;
   additionalStyles?: string;
+  id?: string;
+  // eslint-disable-next-line no-undef
   as?: keyof JSX.IntrinsicElements;
 }

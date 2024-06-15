@@ -1,0 +1,9 @@
+.navLink {
+  transition: .25s;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom:  1px solid var(--white-color);
+  }
+}

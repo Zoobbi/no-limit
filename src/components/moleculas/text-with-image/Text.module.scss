@@ -1,0 +1,46 @@
+@import "../../../styles/media";
+
+.textComponent {
+  background-color: var(--contrast-color);
+  color: var(--white-color);
+  font-size: var(--font-18);
+  line-height: var(--line-height-28);
+}
+
+.textWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  @include respond-to(md) {
+    margin-top: 32px;
+  }
+
+  @include respond-to(sm) {
+    margin-top: 32px;
+  }
+}
+
+.colStyles {
+  @include respond-to(md) {
+    padding-right: 48px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @include respond-to(sm) {
+   padding-bottom: 24px;
+  }
+}
+
+.flexSwap {
+  @include respond-to(lg) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 16/9;
+}

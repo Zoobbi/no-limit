@@ -1,0 +1,40 @@
+@import "src/styles/media.scss";
+
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoCardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoCardsWrapper {
+  background-color: var(--white-color);
+}
+
+.infoCardOffset {
+  @include respond-to(md) {
+   margin-bottom: 24px;
+  }
+}
+
+.cardWrap {
+  width: 120px;
+  height: 150px;
+
+  @include respond-to(md) {
+    width: 200px;
+    height: 250px;
+  }
+
+  @include respond-to(lg) {
+    width: 200px;
+    height: 250px;
+  }
+}

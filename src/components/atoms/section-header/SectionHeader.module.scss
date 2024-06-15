@@ -1,0 +1,24 @@
+@import "src/styles/media.scss";
+
+.headerSection {
+  text-shadow: var(--text-shadow);
+
+  @include respond-to(lg) {
+    font-size: var(--font-32);
+    font-weight: 700;
+    line-height: var(--line-height-40);
+  }
+  @include respond-to(sm) {
+    font-size: var(--font-24);
+    font-weight: 700;
+    line-height: var(--line-height-28);
+  }
+}
+
+.headerSectionTextColor {
+  color: var(--text-color)
+}
+
+.headerSectionMainColor {
+  color: var(--white-color);
+}

@@ -9,7 +9,7 @@ interface SeparatorProps {
 
 export const Separator = ({ children }: SeparatorProps) => {
   return (
-    <UniversalWrapper pbLg={48} pbMd={32} pbSm={24}>
+    <UniversalWrapper pbLg={96} pbMd={48} pbSm={32}>
       {children}
     </UniversalWrapper>
   );

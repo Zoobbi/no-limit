@@ -1,0 +1,1 @@
+export { CampTrainingInfo } from "./CampTrainingInfo";
